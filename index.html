@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayesha Saddiqa - My Portfolio</title>
+
+<style>
+  /* ===== Simple beginner CSS ===== */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: #fdf6fa;
+    color: #3d3040;
+    line-height: 1.6;
+  }
+
+  /* Header / navigation */
+  header {
+    background: white;
+    padding: 16px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px #f3dcea;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d63384;
+  }
+
+  nav a {
+    color: #3d3040;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 15px;
+  }
+
+  nav a:hover {
+    color: #d63384;
+  }
+
+  /* Hero section */
+  .hero {
+    text-align: center;
+    padding: 70px 20px 55px;
+    background: linear-gradient(135deg, #ffe3f0, #e9e4ff);
+  }
+
+  .hero .flower {
+    font-size: 44px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    margin: 12px 0 8px;
+  }
+
+  .hero h1 span {
+    color: #d63384;
+  }
+
+  .hero p {
+    color: #6f5f76;
+    max-width: 520px;
+    margin: 0 auto 22px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #d63384;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .btn:hover {
+    background: #b02a6b;
+  }
+
+  #helloText {
+    margin-top: 16px;
+    color: #7c3aed;
+    font-weight: bold;
+    min-height: 24px;
+  }
+
+  /* Page sections */
+  .section {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px 20px 10px;
+  }
+
+  .section h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .section .sub {
+    text-align: center;
+    color: #8a7a93;
+    margin-bottom: 28px;
+  }
+
+  .about-box {
+    background: white;
+    border-radius: 16px;
+    padding: 26px;
+    box-shadow: 0 4px 16px #f3e2ee;
+    text-align: center;
+  }
+
+  /* Cards (skills + projects) */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 16px #f3e2ee;
+  }
+
+  .card .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .card h3 {
+    margin-bottom: 6px;
+    font-size: 19px;
+  }
+
+  .card p {
+    color: #6f5f76;
+    font-size: 15px;
+  }
+
+  .level {
+    display: inline-block;
+    background: #ffe3f0;
+    color: #b02a6b;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+
+  .card a {
+    color: #d63384;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+  /* Hobbies */
+  .hobbies {
+    text-align: center;
+  }
+
+  .hobbies span {
+    display: inline-block;
+    background: white;
+    border: 1px solid #f3c6dd;
+    color: #b02a6b;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  footer {
+    text-align: center;
+    color: #8a7a93;
+    font-size: 14px;
+    padding: 45px 15px 30px;
+  }
+
+  footer a {
+    color: #d63384;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* Mobile friendly */
+  @media (max-width: 700px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+      font-size: 29px;
+    }
+
+    nav a {
+      margin-left: 10px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🌸 Ayesha Saddiqa</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="flower">🌷</div>
+  <h1>Hi, I'm <span>Ayesha Saddiqa</span></h1>
+  <p>A student and beginner web developer. I love making simple,
+     pretty websites with HTML, CSS and a little bit of JavaScript.</p>
+  <button class="btn" id="helloBtn">Say Hello 👋</button>
+  <p id="helloText"></p>
+</section>
+
+<!-- About -->
+<section class="section" id="about">
+  <h2>About Me</h2>
+  <p class="sub">A little bit about myself</p>
+  <div class="about-box">
+    <p>My name is Ayesha Saddiqa. I am learning web development step by step.
+       I have started with HTML and CSS, and now I am learning JavaScript.
+       My goal is to build small, useful websites and keep improving every day.
+       This portfolio is one of my first websites — simple, clean and made with love. 💜</p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="section" id="skills">
+  <h2>My Skills</h2>
+  <p class="sub">Things I am learning</p>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🧡</div>
+      <h3>HTML</h3>
+      <p>I can build the structure of a web page using headings, paragraphs, links, images and forms.</p>
+      <span class="level">Beginner</span>
+    </div>
+    <div class="card">
+      <div class="icon">💙</div>
+      <h3>CSS</h3>
+      <p>I can style pages with colors, fonts, cards and layouts, and make them look good on mobile.</p>
+      <span class="level">Beginner</span>
+    </div>
+    <div class="card">
+      <div class="icon">💛</div>
+      <h3>JavaScript</h3>
+      <p>I am learning how to make pages interactive — buttons, totals, saving data in the browser and more.</p>
+      <span class="level">Learning</span>
+    </div>
+    <div class="card">
+      <div class="icon">🖤</div>
+      <h3>GitHub</h3>
+      <p>I can put my code on GitHub and publish my websites live with GitHub Pages.</p>
+      <span class="level">Beginner</span>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="section" id="projects">
+  <h2>My Projects</h2>
+  <p class="sub">Small projects I have made</p>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">💰</div>
+      <h3>PennyWise — Expense Tracker</h3>
+      <p>A simple money tracker where you can add your income and expenses in PKR and see your balance.</p>
+      <p style="margin-top:10px;">
+        <a href="https://luckyleafstudioco-ui.github.io/Ayesha-Saddiqa/" target="_blank">Open Live Website →</a>
+      </p>
+    </div>
+    <div class="card">
+      <div class="icon">🌸</div>
+      <h3>My Portfolio Website</h3>
+      <p>This very page! A simple personal portfolio website made with HTML, CSS and a little JavaScript.</p>
+      <span class="level">You are looking at it ✨</span>
+    </div>
+  </div>
+</section>
+
+<!-- Hobbies -->
+<section class="section">
+  <h2>My Hobbies</h2>
+  <p class="sub">Things I enjoy</p>
+  <div class="hobbies">
+    <span>📚 Reading</span>
+    <span>💻 Coding</span>
+    <span>🎨 Drawing</span>
+    <span>🎵 Music</span>
+    <span>✍️ Writing</span>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p class="sub">See my work on GitHub</p>
+  <div class="about-box">
+    <p>You can see all my projects on my GitHub profile:</p>
+    <p style="margin-top:10px;">
+      <a class="btn" href="https://github.com/luckyleafstudioco-ui" target="_blank">Visit My GitHub</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  Made with 💜 by Ayesha Saddiqa · <span id="year"></span>
+</footer>
+
+<script>
+  // Small beginner JavaScript
+
+  // 1. Show the current year in the footer
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // 2. "Say Hello" button shows a sweet message
+  const helloBtn = document.getElementById("helloBtn");
+  const helloText = document.getElementById("helloText");
+
+  helloBtn.addEventListener("click", function () {
+    helloText.textContent = "Hello! 🌸 Thank you for visiting my portfolio. Have a lovely day!";
+  });
+</script>
+
+</body>
+</html>
